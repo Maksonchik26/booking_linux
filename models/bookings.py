@@ -9,6 +9,7 @@ class BookingIn(BaseModel):
     guest_name: str = Field(min_length=3)
     daily_rate: float = Field(ge=0)
 
+
     class Config:
         json_schema_extra = {
             "example": {
